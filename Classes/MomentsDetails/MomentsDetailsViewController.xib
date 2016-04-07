@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MomentsDetailsViewController">
+            <connections>
+                <outlet property="decision" destination="PrA-tn-yZh" id="itR-r0-Czw"/>
+                <outlet property="imgMoment1" destination="05q-Q5-mS2" id="dWw-Xh-Fsi"/>
+                <outlet property="imgMoment2" destination="NWC-I3-fLb" id="Ymf-Hv-SAM"/>
+                <outlet property="imgUserMoment1" destination="MMg-g8-Rpy" id="xdS-ni-8Ep"/>
+                <outlet property="imgUserMoment2" destination="Jbx-V8-wA1" id="qXm-qH-F5u"/>
+                <outlet property="lblTimeMoment1" destination="3Yr-Us-KvR" id="Ci5-4u-lQu"/>
+                <outlet property="lblTimeMoment2" destination="KAi-Wb-GBQ" id="alF-xR-XPr"/>
+                <outlet property="lblUsernameMoment1" destination="3Nn-hm-mym" id="Oz2-pa-ing"/>
+                <outlet property="lblUsernameMoment2" destination="1yH-U2-cv8" id="Orz-pg-BAQ"/>
+                <outlet property="liked" destination="eO5-TM-yov" id="5iF-HL-v2B"/>
+                <outlet property="nope" destination="wCs-X2-8gP" id="UnK-z3-nzw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwMoment1" destination="naa-ZX-Ski" id="x2w-Hy-eqW"/>
+                <outlet property="vwMoment2" destination="T7g-lI-iv8" id="A1W-r2-DwC"/>
+                <outlet property="vwMoment3" destination="7an-a2-N3w" id="40q-7K-Jw3"/>
+                <outlet property="vwMoment4" destination="ZOm-Lz-3yL" id="LtF-Hw-QuW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZOm-Lz-3yL" userLabel="View - vwMoment4">
+                    <rect key="frame" x="15" y="20" width="290" height="540"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_boader.png" translatesAutoresizingMaskIntoConstraints="NO" id="90C-Fo-1z4" customClass="EGOImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="290" height="548"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2lV-Lf-ieD">
+                            <rect key="frame" x="0.0" y="485" width="300" height="55"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="GBh-gV-jlA" customClass="EGOImageView">
+                                    <rect key="frame" x="8" y="5" width="43" height="45"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="user name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5W7-lk-rIM">
+                                    <rect key="frame" x="55" y="8" width="191" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJk-oM-wRD">
+                                    <rect key="frame" x="56" y="31" width="164" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7an-a2-N3w" userLabel="View - vwMoment3">
+                    <rect key="frame" x="15" y="20" width="290" height="540"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_boader.png" translatesAutoresizingMaskIntoConstraints="NO" id="s4C-oR-oS2" customClass="EGOImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="290" height="548"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GnX-sd-w6N">
+                            <rect key="frame" x="0.0" y="485" width="300" height="55"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="4CN-OD-bDv" customClass="EGOImageView">
+                                    <rect key="frame" x="8" y="5" width="43" height="45"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="user name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iw-Re-qTn">
+                                    <rect key="frame" x="55" y="8" width="191" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PF-me-aww">
+                                    <rect key="frame" x="56" y="31" width="164" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T7g-lI-iv8" userLabel="View - vwMoment2">
+                    <rect key="frame" x="10" y="15" width="300" height="540"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_boader.png" translatesAutoresizingMaskIntoConstraints="NO" id="NWC-I3-fLb" customClass="EGOImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="548"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Sv-3d-6I7">
+                            <rect key="frame" x="0.0" y="485" width="300" height="55"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jbx-V8-wA1" customClass="EGOImageView">
+                                    <rect key="frame" x="8" y="5" width="43" height="45"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="user name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yH-U2-cv8">
+                                    <rect key="frame" x="55" y="8" width="191" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAi-Wb-GBQ">
+                                    <rect key="frame" x="56" y="31" width="164" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="naa-ZX-Ski" userLabel="View - vwMoment1">
+                    <rect key="frame" x="5" y="10" width="310" height="540"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image_boader.png" translatesAutoresizingMaskIntoConstraints="NO" id="05q-Q5-mS2" customClass="EGOImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="310" height="548"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="35w-Ip-Tsb" appends="YES" id="kTF-vV-zWq"/>
+                            </connections>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nope" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCs-X2-8gP">
+                            <rect key="frame" x="25" y="73" width="77" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Liked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eO5-TM-yov">
+                            <rect key="frame" x="190" y="73" width="72" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-VU-Fy2">
+                            <rect key="frame" x="0.0" y="488" width="310" height="55"/>
+                            <subviews>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="MMg-g8-Rpy" customClass="EGOImageView">
+                                    <rect key="frame" x="8" y="0.0" width="43" height="45"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yr-Us-KvR">
+                                    <rect key="frame" x="55" y="18" width="156" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAH-qC-NuO">
+                                    <rect key="frame" x="205" y="-8" width="40" height="40"/>
+                                    <state key="normal" image="three-dot-icon.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnOtherOptionsTapped:" destination="-1" eventType="touchUpInside" id="i8K-b6-76H"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYH-kv-W76">
+                                    <rect key="frame" x="262" y="0.0" width="35" height="40"/>
+                                    <state key="normal" image="chat-active-icon.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnChatTapped:" destination="-1" eventType="touchUpInside" id="9rI-1w-0Gt"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="user name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nn-hm-mym">
+                                    <rect key="frame" x="55" y="0.0" width="191" height="22"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="jdt-mW-8BQ" appends="YES" id="vzT-VO-yCF"/>
+                    </connections>
+                </view>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Liked" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrA-tn-yZh" userLabel="Decision">
+                    <rect key="frame" x="59" y="274" width="201" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="jdt-mW-8BQ" appends="YES" id="C8k-D7-Ja6"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="182"/>
+        </view>
+        <panGestureRecognizer enabled="NO" minimumNumberOfTouches="1" id="jdt-mW-8BQ">
+            <connections>
+                <action selector="pan:" destination="-1" id="0kR-YA-AaD"/>
+            </connections>
+        </panGestureRecognizer>
+        <tapGestureRecognizer id="35w-Ip-Tsb">
+            <connections>
+                <action selector="tapDetected:" destination="-1" id="XXC-I1-gUK"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="chat-active-icon.png" width="75" height="75"/>
+        <image name="image_boader.png" width="286" height="325"/>
+        <image name="placeholder.png" width="59" height="60"/>
+        <image name="three-dot-icon.png" width="75" height="75"/>
+    </resources>
+</document>

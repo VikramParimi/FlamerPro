@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6221" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecieverCell" rowHeight="54" id="KGk-i7-Jjw" customClass="RecieverChatCell">
+            <rect key="frame" x="0.0" y="1" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reciever_top.png" translatesAutoresizingMaskIntoConstraints="NO" id="0zM-xJ-gND">
+                        <rect key="frame" x="55" y="5" width="260" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="C6f-Nw-PWI"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reciever_bot.png" translatesAutoresizingMaskIntoConstraints="NO" id="bmf-Ov-HiR">
+                        <rect key="frame" x="55" y="27" width="260" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="5yi-Od-8oX"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reciever_mid.png" translatesAutoresizingMaskIntoConstraints="NO" id="bQy-KQ-ewt">
+                        <rect key="frame" x="55" y="15" width="260" height="12"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJ4-iu-pIL">
+                        <rect key="frame" x="75" y="14" width="230" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jix-c5-sIp">
+                        <rect key="frame" x="152" y="30" width="153" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="JCt-if-pbH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T0t-t6-ngp" customClass="AsyncImageView">
+                        <rect key="frame" x="6" y="5" width="44" height="44"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="Nnb-sw-4PC"/>
+                            <constraint firstAttribute="height" constant="44" id="g7I-Ei-Ezc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bQy-KQ-ewt" secondAttribute="bottom" constant="26" id="0v5-Mz-LUY"/>
+                    <constraint firstItem="T0t-t6-ngp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="2ot-kI-6HF"/>
+                    <constraint firstAttribute="bottom" secondItem="bmf-Ov-HiR" secondAttribute="bottom" constant="5" id="9eO-Ez-S80"/>
+                    <constraint firstAttribute="bottom" secondItem="MJ4-iu-pIL" secondAttribute="bottom" constant="19" id="BhU-bD-J01"/>
+                    <constraint firstItem="Jix-c5-sIp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="152" id="Bk2-mL-AR5"/>
+                    <constraint firstItem="MJ4-iu-pIL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="75" id="DvT-Oc-Mog"/>
+                    <constraint firstAttribute="trailing" secondItem="bmf-Ov-HiR" secondAttribute="trailing" constant="5" id="Nmt-GC-gUL"/>
+                    <constraint firstAttribute="trailing" secondItem="bQy-KQ-ewt" secondAttribute="trailing" constant="5" id="PH2-2Z-eP5"/>
+                    <constraint firstAttribute="bottom" secondItem="Jix-c5-sIp" secondAttribute="bottom" constant="6" id="QxG-fe-gnc"/>
+                    <constraint firstItem="bQy-KQ-ewt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="55" id="Vha-ZM-41O"/>
+                    <constraint firstItem="0zM-xJ-gND" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="55" id="Ww8-4S-FqH"/>
+                    <constraint firstAttribute="trailing" secondItem="0zM-xJ-gND" secondAttribute="trailing" constant="5" id="dBz-dL-WPB"/>
+                    <constraint firstAttribute="trailing" secondItem="MJ4-iu-pIL" secondAttribute="trailing" constant="15" id="e2K-Ye-Eta"/>
+                    <constraint firstAttribute="bottom" secondItem="T0t-t6-ngp" secondAttribute="bottom" constant="4" id="ekb-6Y-Sg4"/>
+                    <constraint firstItem="bmf-Ov-HiR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="55" id="gRb-o0-p2K"/>
+                    <constraint firstItem="MJ4-iu-pIL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="mcD-vp-a5V"/>
+                    <constraint firstAttribute="trailing" secondItem="Jix-c5-sIp" secondAttribute="trailing" constant="15" id="mqV-SC-NIt"/>
+                    <constraint firstItem="bQy-KQ-ewt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="sDf-sL-K7n"/>
+                    <constraint firstItem="0zM-xJ-gND" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="yUP-E6-1O5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="messageLabel" destination="MJ4-iu-pIL" id="ULy-q7-xZN"/>
+                <outlet property="timeLabel" destination="Jix-c5-sIp" id="9kC-au-wXn"/>
+                <outlet property="userImageView" destination="T0t-t6-ngp" id="Q7Q-ej-eT8"/>
+            </connections>
+            <point key="canvasLocation" x="501" y="473"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="reciever_bot.png" width="320" height="21"/>
+        <image name="reciever_mid.png" width="320" height="25"/>
+        <image name="reciever_top.png" width="640" height="20"/>
+    </resources>
+</document>

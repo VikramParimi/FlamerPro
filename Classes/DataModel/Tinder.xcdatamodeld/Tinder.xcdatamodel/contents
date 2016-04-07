@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 4.3">
+    <entity name="EditProfile" representedClassName="EditProfile" syncable="YES">
+        <attribute name="fbURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="position" optional="YES" attributeType="Integer 32" defaultValueString="-1" syncable="YES"/>
+        <attribute name="userFBID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GetProfile" representedClassName="GetProfile" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastActive" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personDesc" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Login" representedClassName="Login" syncable="YES">
+        <attribute name="about" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dob" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fbId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="likes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lowerage" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="maxage" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="prefsex" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="MatchedUserList" representedClassName="MatchedUserList" syncable="YES">
+        <attribute name="fId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastActive" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="proficePic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MessageTable" representedClassName="MessageTable" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pt" optional="YES" attributeType="Boolean" defaultValueString="0" syncable="YES"/>
+        <attribute name="receiverId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="senderId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uniqueId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SingleChatMessages" syncable="YES">
+        <attribute name="mediaType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reciever" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UploadImages" representedClassName="UploadImages" syncable="YES">
+        <attribute name="fbId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrlFB" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrlLocal" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="XmppFriend" syncable="YES">
+        <attribute name="friend_DisplayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friend_JID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friend_Name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBlocked" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastMessageID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastMessageStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastMessageTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="presenceStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="profileImage" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EditProfile" positionX="-56" positionY="-9" width="128" height="103"/>
+        <element name="GetProfile" positionX="-56" positionY="-147" width="128" height="120"/>
+        <element name="Login" positionX="-252" positionY="81" width="128" height="225"/>
+        <element name="MatchedUserList" positionX="-252" positionY="-147" width="128" height="120"/>
+        <element name="MessageTable" positionX="-56" positionY="111" width="128" height="195"/>
+        <element name="SingleChatMessages" positionX="-153" positionY="9" width="128" height="133"/>
+        <element name="UploadImages" positionX="-254" positionY="-18" width="128" height="90"/>
+        <element name="XmppFriend" positionX="-153" positionY="9" width="128" height="210"/>
+    </elements>
+</model>

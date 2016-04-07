@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MomentsCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Gv-9Z-skG" customClass="EGOImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart_like.png" translatesAutoresizingMaskIntoConstraints="NO" id="IIK-Gh-iQV">
+                        <rect key="frame" x="1" y="57" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="8WP-t1-Upv"/>
+                            <constraint firstAttribute="height" constant="20" id="Na5-Z4-bsH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hH-U5-eJA">
+                        <rect key="frame" x="23" y="56" width="30" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="FGB-tR-a3H"/>
+                            <constraint firstAttribute="height" constant="21" id="dui-bD-RTQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="sxM-wO-W76">
+                        <rect key="frame" x="-4" y="-1" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Gft-PB-f5e"/>
+                            <constraint firstAttribute="width" constant="30" id="ZNP-vC-NRf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8B-Tq-TZ5">
+                        <rect key="frame" x="23" y="3" width="40" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="7G5-cG-hfu"/>
+                            <constraint firstAttribute="height" constant="21" id="Eeq-rm-J3K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2T-gY-ITi">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sxM-wO-W76" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="-1" id="1uA-a8-Yeb"/>
+                <constraint firstItem="n8B-Tq-TZ5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="EBV-jw-q3S"/>
+                <constraint firstItem="sxM-wO-W76" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-4" id="Eus-qW-7Jp"/>
+                <constraint firstAttribute="bottom" secondItem="0Gv-9Z-skG" secondAttribute="bottom" id="If8-F8-3bN"/>
+                <constraint firstAttribute="trailing" secondItem="0Gv-9Z-skG" secondAttribute="trailing" id="Jex-Fh-byp"/>
+                <constraint firstAttribute="bottom" secondItem="0hH-U5-eJA" secondAttribute="bottom" constant="3" id="K2h-UQ-fZ7"/>
+                <constraint firstAttribute="bottom" secondItem="IIK-Gh-iQV" secondAttribute="bottom" constant="3" id="NeY-CG-4ak"/>
+                <constraint firstItem="0Gv-9Z-skG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qtz-39-tmT"/>
+                <constraint firstItem="n8B-Tq-TZ5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="23" id="Wmn-cU-mnw"/>
+                <constraint firstItem="0Gv-9Z-skG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yr0-r8-u95"/>
+                <constraint firstAttribute="trailing" secondItem="B2T-gY-ITi" secondAttribute="trailing" id="ZDw-Wz-8Pr"/>
+                <constraint firstItem="B2T-gY-ITi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cV7-eP-Uqz"/>
+                <constraint firstItem="IIK-Gh-iQV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="gV0-Np-sYH"/>
+                <constraint firstItem="0hH-U5-eJA" firstAttribute="leading" secondItem="IIK-Gh-iQV" secondAttribute="trailing" constant="2" id="geN-zu-RAc"/>
+                <constraint firstAttribute="bottom" secondItem="B2T-gY-ITi" secondAttribute="bottom" id="vaM-La-Caz"/>
+                <constraint firstItem="B2T-gY-ITi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vrw-YC-o4d"/>
+            </constraints>
+            <connections>
+                <outlet property="btnMoment" destination="B2T-gY-ITi" id="66I-kZ-NFF"/>
+                <outlet property="imgPhoto" destination="0Gv-9Z-skG" id="rNT-NS-jlu"/>
+                <outlet property="lblLikeReceived" destination="0hH-U5-eJA" id="8hH-vh-XgC"/>
+                <outlet property="lblMomentExpiration" destination="n8B-Tq-TZ5" id="GAS-5h-pSA"/>
+            </connections>
+            <point key="canvasLocation" x="-291" y="253"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Default.png" width="640" height="960"/>
+        <image name="heart_like.png" width="48" height="48"/>
+        <image name="time_icon.png" width="128" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController">
+            <connections>
+                <outlet property="btnMoment" destination="UaG-Rc-tKn" id="6h4-5a-uq4"/>
+                <outlet property="imgMoment" destination="k9y-OO-HTE" id="ppS-eq-Pt2"/>
+                <outlet property="lblMomentTime" destination="bhd-GP-m2Z" id="KxX-oz-166"/>
+                <outlet property="lblMomentsCount" destination="G0i-MV-GKe" id="1EE-Ow-yzR"/>
+                <outlet property="searchBar" destination="E0Z-JA-4zg" id="UcC-Mn-JC0"/>
+                <outlet property="searchDisplayController" destination="1OA-65-2mR" id="FaY-14-4Wy"/>
+                <outlet property="tblView" destination="BJU-oo-XYJ" id="AVb-HC-Env"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="vwCapture" destination="rrU-wk-G9j" id="5ah-rX-Uth"/>
+                <outlet property="vwContainer" destination="atp-Mp-yWM" id="5qU-gv-eYK"/>
+                <outlet property="vwMoment1" destination="peS-8n-nwb" id="hbk-JC-IQB"/>
+                <outlet property="vwMoment2" destination="YC8-3y-jDA" id="Zb4-7Z-2v2"/>
+                <outlet property="vwMoments" destination="O8d-w8-0Eq" id="Y0z-f9-AR8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="sWs-Na-m4q" userLabel="View - Top Bar">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ODU-4T-RtQ" userLabel="Button - Home">
+                            <rect key="frame" x="2" y="2" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="5" maxX="5" maxY="5"/>
+                            <state key="normal" image="tinder-inactive-icon.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnHomeTapped:" destination="-1" eventType="touchUpInside" id="Wna-fC-fRG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cyd-Hp-oI2">
+                            <rect key="frame" x="140" y="2" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                            <state key="normal" image="chat-active-icon.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7Si-AS-ur0">
+                            <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UaG-Rc-tKn">
+                            <rect key="frame" x="280" y="2" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                            <state key="normal" image="camera-heart-inactive-icon.png">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnMomentsTapped:" destination="-1" eventType="touchUpInside" id="wNT-JQ-ZAI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <searchBar contentMode="redraw" id="E0Z-JA-4zg">
+                    <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" red="0.90196078430000004" green="0.34509803919999998" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Fwo-Da-i7c"/>
+                    </connections>
+                </searchBar>
+                <view contentMode="scaleToFill" id="atp-Mp-yWM" userLabel="View - Container">
+                    <rect key="frame" x="0.0" y="88" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                    <subviews>
+                        <view hidden="YES" contentMode="scaleToFill" id="O8d-w8-0Eq" userLabel="View - Moments">
+                            <rect key="frame" x="5" y="-28" width="310" height="146"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" id="YC8-3y-jDA" userLabel="View - Moment 2">
+                                    <rect key="frame" x="5" y="6" width="300" height="140"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="peS-8n-nwb" userLabel="View - Moment 1">
+                                    <rect key="frame" x="0.0" y="2" width="310" height="140"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userPlaceHolder.gif" id="k9y-OO-HTE" customClass="EGOImageView">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="115"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 Moments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G0i-MV-GKe">
+                                            <rect key="frame" x="8" y="116" width="170" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bhd-GP-m2Z" userLabel="Now">
+                                            <rect key="frame" x="186" y="116" width="116" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="a5p-Mf-d3z">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnMomentTapped:" destination="-1" eventType="touchUpInside" id="0iT-jQ-ODD"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" id="BJU-oo-XYJ">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Seh-x0-G6A"/>
+                                <outlet property="delegate" destination="-1" id="6OJ-VN-gSf"/>
+                            </connections>
+                        </tableView>
+                        <view hidden="YES" contentMode="scaleToFill" id="rrU-wk-G9j" userLabel="View -  Capture">
+                            <rect key="frame" x="0.0" y="410" width="320" height="70"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="y36-Zv-TVE">
+                                    <rect key="frame" x="125" y="0.0" width="70" height="70"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                    <state key="normal" image="camera-active-icon.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnCaptureMomentTapped:" destination="-1" eventType="touchUpInside" id="CLf-gP-25q"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="-728" y="127"/>
+        </view>
+        <searchDisplayController id="1OA-65-2mR">
+            <connections>
+                <outlet property="delegate" destination="-1" id="byc-Ci-LJf"/>
+                <outlet property="searchBar" destination="E0Z-JA-4zg" id="7V8-Sj-nDU"/>
+                <outlet property="searchContentsController" destination="-1" id="CEq-Jw-Jrl"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="gX4-0r-WKz"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="JI7-dA-JTm"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="camera-active-icon.png" width="200" height="200"/>
+        <image name="camera-heart-inactive-icon.png" width="75" height="75"/>
+        <image name="chat-active-icon.png" width="75" height="75"/>
+        <image name="tinder-inactive-icon.png" width="75" height="75"/>
+        <image name="userPlaceHolder.gif" width="200" height="126"/>
+    </resources>
+</document>

@@ -1,0 +1,33 @@
+//
+// Prefix header for all source files of the 'Tinder' target in the 'Tinder' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+#define kPushDidReceive @"kPushDidReceive"
+#define KPushMessageDidReceive @"KPushMessageDidReceive"
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "AllConstants.h"
+    #import "UserDefaultHelper.h"
+    #import "Helper.h"
+    #import "ProgressIndicator.h"
+    #import "WebServiceHandler.h"
+    #import "UIImage+Additions_568.h"
+    #import "Service.h"
+    #import "DataBase.h"
+    #import <FacebookSDK/FacebookSDK.h>
+    #import <CoreData/CoreData.h>
+    #import <SystemConfiguration/SystemConfiguration.h>
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import "UtilityClass.h"
+    #import "AFNHelper.h"
+    #import "FacebookUtility.h"
+    #import "User.h"
+    #import "XmppCommunicationHandler.h"
+#endif
+

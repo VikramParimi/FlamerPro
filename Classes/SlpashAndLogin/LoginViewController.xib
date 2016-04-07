@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="btnFBLogin" destination="8wS-dw-j5g" id="EJZ-Ik-kJ5"/>
+                <outlet property="btnInfo" destination="9Zk-q9-qR4" id="Uva-fW-gZ3"/>
+                <outlet property="imgShadow" destination="t3q-LD-8HK" id="Wmp-U0-zrh"/>
+                <outlet property="pageControl" destination="aKH-jv-k6p" id="27J-wu-4iL"/>
+                <outlet property="picDate" destination="F2m-QT-cR0" id="Inn-Wf-2JH"/>
+                <outlet property="scrImages" destination="uXO-yg-b1X" id="kbV-xh-OPe"/>
+                <outlet property="view" destination="1" id="3"/>
+                <outlet property="viewDatePic" destination="Up8-PK-PSe" id="MNh-G2-wtW"/>
+                <outlet property="viewInfo" destination="abB-2M-LpT" id="i3A-BZ-yS7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="abB-2M-LpT" userLabel="viewInfo">
+                    <rect key="frame" x="0.0" y="399" width="320" height="420"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9Zk-q9-qR4" userLabel="btnInfo">
+                            <rect key="frame" x="12" y="47" width="296" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title=" We'll never post anything to facebook.">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickbtnInfo:" destination="-1" eventType="touchUpInside" id="5qN-ej-mrJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8wS-dw-j5g" userLabel="btnFBLogin">
+                            <rect key="frame" x="19" y="8" width="282" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" backgroundImage="fb_btn_txt.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onClickbtnFBLogin:" destination="-1" eventType="touchUpInside" id="SK2-AU-bN6"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="aKH-jv-k6p">
+                    <rect key="frame" x="0.0" y="369" width="320" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="changePage:" destination="-1" eventType="touchUpInside" id="1Wc-oF-pmz"/>
+                    </connections>
+                </pageControl>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="shadow.png" id="t3q-LD-8HK" userLabel="imgShadow">
+                    <rect key="frame" x="0.0" y="365" width="320" height="11"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" id="Up8-PK-PSe" userLabel="viewDatePic">
+                    <rect key="frame" x="0.0" y="220" width="320" height="260"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ezT-rA-44H">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="3Di-kH-kCP"/>
+                                <barButtonItem style="plain" id="LG8-Li-O2e">
+                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IWL-4d-a4a">
+                                        <rect key="frame" x="85" y="6" width="150" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Date of Birth">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" title="Date of Birth">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="rSU-ar-OdH"/>
+                                <barButtonItem title="Done" id="la9-kH-4aM">
+                                    <connections>
+                                        <action selector="onClickDone:" destination="-1" id="JWV-Ir-eA4"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="F2m-QT-cR0" userLabel="picDate">
+                            <rect key="frame" x="0.0" y="44" width="320" height="216"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <date key="date" timeIntervalSinceReferenceDate="424008840.40848303">
+                                <!--2014-06-09 12:14:00 +0000-->
+                            </date>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="uXO-yg-b1X" userLabel="scrImages">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="376"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="c7t-sp-wpk"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="440" y="330"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fb_btn_txt.png" width="236" height="45"/>
+        <image name="shadow.png" width="320" height="11"/>
+    </resources>
+</document>
