@@ -22,7 +22,7 @@
   
     EGOImageView *profileImageView;
   
-    //NSMutableArray *myProfileMatches;
+    NSMutableArray *myProfileMatches;
     NSMutableArray *myProfileRecommendations; // Tinder
     
     IBOutlet UIView *matchesView;
