@@ -19,6 +19,7 @@
 //#import "EBSetting+Extention.h"
 //#import "EBSetting.h"
 //#import "HRAlertView.h"
+//#import "HRAlertView.h"
 
 @interface EBTinderClient ()
 
